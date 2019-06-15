@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Loading">
+        <attr name="gBackgroundLineSize" format="dimension" />
+        <attr name="gForegroundLineSize" format="dimension" />
+        <attr name="gBackgroundColor" />
+        <attr name="gForegroundColor" format="reference|color" />
+        <attr name="gProgressStyle">
+            <enum name="circle" value="1" />
+            <enum name="line" value="2" />
+        </attr>
+        <attr name="gAutoRun" format="boolean" />
+        <attr name="gProgressFloat" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="SquareLayout">
+        <attr name="oscAccordTo" format="integer">
+            <enum name="width" value="1" />
+            <enum name="height" value="2" />
+            <enum name="useMin" value="3" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="TitleToolbar">
+        <attr name="titleVisible" format="boolean" />
+        <attr name="titleTextSize" format="dimension" />
+
+        <attr name="subtitleVisible" format="boolean" />
+        <attr name="subtitleTextSize" format="dimension" />
+
+        <attr name="title_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="closeVisible" format="boolean" />
+        <attr name="closeText" format="string" />
+        <attr name="closeTextAppearance" format="reference" />
+        <attr name="closeTextColor" format="color" />
+        <attr name="closeTextSize" format="dimension" />
+        <attr name="closeIcon" format="reference" />
+
+        <attr name="backVisible" format="boolean" />
+        <attr name="backText" format="string" />
+        <attr name="backTextAppearance" format="reference" />
+        <attr name="backTextColor" format="color" />
+        <attr name="backTextSize" format="dimension" />
+        <attr name="backIcon" format="reference" />
+        <attr name="backMarginRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="GridViewLine">
+        <attr name="line_width" format="dimension" />
+        <attr name="line_color" format="color" />
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="vericationCodeInput">
+        <attr name="box" format="integer" />
+        <attr name="child_h_padding" format="dimension" />
+        <attr name="child_v_padding" format="dimension" />
+        <attr name="child_width" format="dimension" />
+        <attr name="child_height" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="box_bg_focus" format="reference" />
+        <attr name="box_bg_normal" format="reference" />
+        <attr name="inputType" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="IndicatorView">
+        <attr name="indicator_icon" format="reference" />
+        <attr name="indicator_margin" format="dimension" />
+        <attr name="indicator_smooth" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CouponView">
+        <attr name="discount" format="integer" />
+        <attr name="leftCondition" format="string" />
+        <attr name="mainTitle" format="string" />
+        <attr name="subTitle" format="string" />
+        <attr name="dateTitle" format="string" />
+        <attr name="bevelText" format="string" />
+
+        <attr name="gradientFrom" format="color" />
+        <attr name="gradientTo" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StepView">
+        <attr name="circle" format="integer" />
+    </declare-styleable>
+
+    <!--自定义验证码输入布局-->
+    <declare-styleable name="InputCodeLayout">
+        <!--输入框数量-->
+        <attr name="icl_number" format="integer" />
+        <!--输入框宽度-->
+        <attr name="icl_width" format="dimension|reference" />
+        <!--输入框高度-->
+        <attr name="icl_height" format="dimension|reference" />
+        <!--输入框之间的分割线宽度-->
+        <attr name="icl_divideWidth" format="dimension|reference" />
+        <!--输入文字颜色-->
+        <attr name="icl_textColor" format="color|reference" />
+        <!--输入文字大小-->
+        <attr name="icl_textSize" format="dimension|reference" />
+        <!--有焦点时输入框背景-->
+        <attr name="icl_focusBackground" format="reference" />
+        <!--无焦点时输入框背景-->
+        <attr name="icl_unFocusBackground" format="reference" />
+        <!--显示模式-->
+        <attr name="icl_showMode">
+            <enum name="normal" value="0" /><!--正常-->
+            <enum name="password" value="1" /><!--密码-->
+        </attr>
+        <!--输入框显示位置-->
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <declare-styleable name="Keyboard">
+        <attr name="xml" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BadgeViewPro">
+        <attr name="shape" format="integer">
+            <enum name="shape_circle" value="0" />
+            <enum name="shape_oval" value="1" />
+            <enum name="shape_rectangle" value="2" />
+            <enum name="shape_round_rectangle" value="3" />
+        </attr>
+        <attr name="badge_textSize" format="dimension" />
+        <attr name="badge_textColor" format="color" />
+        <attr name="badge_bgColor" format="color" />
+        <attr name="badge_shape_type" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AddWidget">
+        <attr name="circle_anim" format="boolean" />
+        <attr name="sub_anim" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleRating">
+        <attr name="title_textSize" format="dimension|reference" />
+        <attr name="rating_textSize" format="dimension|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MNProgressWheel">
+        <attr name="mn_progressIndeterminate" format="boolean" />
+        <attr name="mn_barColor" format="color" />
+        <attr name="mn_rimColor" format="color" />
+        <attr name="mn_rimWidth" format="dimension" />
+        <attr name="mn_spinSpeed" format="float" />
+        <attr name="mn_barSpinCycleTime" format="integer" />
+        <attr name="mn_circleRadius" format="dimension" />
+        <attr name="mn_fillRadius" format="boolean" />
+        <attr name="mn_barWidth" format="dimension" />
+        <attr name="mn_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MNCircularProgressBar">
+        <attr name="mn_progress" format="integer" />
+        <attr name="mn_progressbar_color" format="color" />
+        <attr name="mn_background_progressbar_color" format="color" />
+        <attr name="mn_progressbar_width" format="dimension" />
+        <attr name="mn_background_progressbar_width" format="dimension" />
+    </declare-styleable>
+
+
+</resources>
